@@ -16,12 +16,6 @@ class Colours:
     BLUE = (0, 0, 255)
 
 
-TEXT_SCOPE = ['И', 'а', 'б', 'е', 'л', 'р', 'т', 'ю', 'я']
+TEXT_SCOPE = [chr(char) for char in range(12440, 12544)]
 
 
-def get_random_char():
-    char = choice(TEXT_SCOPE)
-    while True:
-        yield char
-        ch = choice([True, False])
-        char = char if not ch else choice(TEXT_SCOPE)
