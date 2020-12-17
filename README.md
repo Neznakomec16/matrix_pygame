@@ -11,5 +11,5 @@ pip install -r requirements.txt
 
 ### Usage
 
-`python matrix_pygame`
+`python main.py`
 
